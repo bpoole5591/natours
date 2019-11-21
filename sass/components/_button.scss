@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     font-size: $default-font-size;
@@ -9,6 +10,11 @@
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
+    // also added & above as button element doesn't have :link and :visited pseudo-class
   }
 
   &:hover {
@@ -21,7 +27,10 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    // focus added for button element
+    outline: none; // added for button element
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
@@ -78,12 +87,12 @@
   &:hover {
     background-color: $color-primary;
     color: $color-white;
+    transform: translateY(-2px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-    transform: translate(-2px);
   }
 
   &:active {
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translate(0);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
   }
 }
