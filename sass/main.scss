@@ -7,11 +7,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+<<<<<<< HEAD
 @import "components/bg-video";
+=======
+>>>>>>> ef9b2f7b489be1542b5e31a83837325970bb5854
 @import "components/button";
 @import "components/card";
 @import "components/composition";
 @import "components/feature-box";
+<<<<<<< HEAD
 @import "components/form";
 @import "components/story";
 
@@ -19,5 +23,10 @@
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+=======
+
+@import "layout/grid";
+@import "layout/header";
+>>>>>>> ef9b2f7b489be1542b5e31a83837325970bb5854
 
 @import "pages/home";
